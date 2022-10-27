@@ -10,7 +10,7 @@ const TasksCompletedToggle: React.FC<TasksCompletedToggleInterface> = ({
   onToggle,
   isShowing,
 }) => {
-  const buttonTitle = !isShowing ? "Ocultar" : "Mostrar";
+  const buttonTitle = isShowing ? "Ocultar" : "Mostrar";
   return (
     <Container flex justify="center">
       <Button onClick={onToggle}>{buttonTitle} completadas</Button>

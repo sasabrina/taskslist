@@ -17,9 +17,13 @@ const TasksList = () => {
 
   return (
     <List>
-      {taskslist.map((task: Task, i: number) => (
-        <TaskItem key={`${i}${task.id}`} task={task} />
-      ))}
+      {tasks.length > 0 ? (
+        taskslist.map((task: Task, i: number) => (
+          <TaskItem key={`${i}${task.id}`} task={task} />
+        ))
+      ) : (
+        <p>No hay tareas</p>
+      )}
     </List>
   );
 };

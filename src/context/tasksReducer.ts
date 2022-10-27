@@ -8,10 +8,6 @@ type TasksAction =
   | { type: "toggleShowCompleted" }
   | { type: "toggleCompletedTasks" };
 
-const initialState = {};
-export const initializer = (initialValue = initialState) =>
-  getLocalStorage("tasks") || initialValue;
-
 export const tasksReducer = (
   state: TasksState,
   action: TasksAction

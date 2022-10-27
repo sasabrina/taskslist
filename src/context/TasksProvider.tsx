@@ -12,13 +12,7 @@ interface props {
 const INITIAL_STATE: TasksState = getLocalStorage("tasks")
   ? JSON.parse(getLocalStorage("tasks") as string)
   : {
-      tasks: [
-        {
-          id: String(Date.now()),
-          title: "Terminar challenge",
-          completed: false,
-        },
-      ],
+      tasks: [],
       showCompleted: true,
     };
 

@@ -1,4 +1,4 @@
-import { useContext, useEffect, useState } from "react";
+import { useContext } from "react";
 import { TasksCompletedToggle, TasksForm, TasksList } from "@/components";
 import { TasksContext } from "@/context";
 import { H1, MainContainer } from "./globalStyles";
